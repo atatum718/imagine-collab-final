@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+button {
+  background-color: yellow;
+}
+.hero-image {
+  width: 100px;
+  height: 200px;
+}
+.filter-image-container {
+  display: flex;
+  justify-content: center;
+}
+.filter-screen-container {
+  justify-items: center;
+  background-color: black;
+}
+.filter-image {
+  border: 2px solid yellow;
+  width: 200px;
+  height: 200px;
+}
+.filters {
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.nav-container {
+  border: 2px solid yellow;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}

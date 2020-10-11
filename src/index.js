@@ -1,14 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import {
+  TopPageDecoration,
+  BottomPageDecoration,
+} from "./mainStyles/AppStyles";
+import { BrowserRouter } from "react-router-dom";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <TopPageDecoration>
+        {" "}
+        styling with yellow border and icons
+      </TopPageDecoration>
+      <App />
+      <BottomPageDecoration>
+        {" "}
+        styling for bottom, yellow border more icons
+      </BottomPageDecoration>
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
