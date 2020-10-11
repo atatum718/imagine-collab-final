@@ -5,6 +5,7 @@ import { Route, Switch, Link } from "react-router-dom";
 import Filter from "./filter/Filter";
 import Gallery from "./gallery/Gallery";
 import Preview from "./preview/Preview";
+import Share from "./share/share"
 
 function Header() {
   return (
@@ -13,6 +14,7 @@ function Header() {
       <Link to="/gallery">Gallery</Link>
       <Link to="/preview">Preview</Link>
       <Link to="/filter">Filter</Link>
+      <link to="/share">Share</link>
     </>
   );
 }
@@ -26,6 +28,8 @@ function App() {
         <Route path="/gallery" component={Gallery} />
         <Route path="/preview" component={Preview} />
         <Route path="/filter" component={Filter} />
+        <Route path="/share" component={Share} />
+
       </Switch>
     </div>
   );
