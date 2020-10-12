@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import girl1 from "./Assets/girl1.jpg";
-import girl2 from "./Assets/girl2.png";
-import man1 from "./Assets/bruce.jpg";
+import tree1 from "./Assets/preview-brightness.png";
+import tree2 from "./Assets/preview-bw.png";
+import tree3 from "./Assets/preview-hue.png";
+import tree4 from "./Assets/preview-saturation.png";
 import "./preview.css";
 
 class Preview extends Component {
   state = {
     index: 0,
-    picList: [girl1, girl2, man1],
+    picList: [tree1, tree2, tree3, tree4],
   };
 
   onClickNext = () => {
