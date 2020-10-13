@@ -1,9 +1,8 @@
 import React from "react";
-import "../Share/share-screen.css";
-import facebook from "../Share/imgs/facebook.png";
-import logo from "../Share/imgs/Imgine_logo_neon_1.png";
-import twitter from "../Share/imgs/twitter.png";
-import Social from "../Share/share components/Social";
+import "./share-screen.css";
+import facebook from "./imgs/facebook.png";
+import logo from "./imgs/Imgine_logo_neon_1.png";
+import twitter from "./imgs/twitter.png";
 
 function  share (){
   
