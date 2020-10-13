@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 body,
 html {
@@ -17,13 +18,11 @@ button {
   width: 100px;
   height: 200px;
 }
-.filter-image-container {
-  display: flex;
-  justify-content: center;
-}
+
 .filter-screen-container {
-  justify-items: center;
-  background-color: black;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 .filter-image {
   border: 2px solid yellow;
@@ -39,4 +38,37 @@ button {
   padding: 5px;
   display: flex;
   justify-content: space-evenly;
+  
+}
+
+.image{
+  width:300px;
+  height: 300px;
+}
+
+.fil{
+  width: 30%;
+  height: 30%;
+}
+.contrast{
+  width: 60%;
+  height:60%;
+  
+
+}
+
+.but{
+  width: 10%;
+  height:10%;
+}
+.input1{
+  height: 40px;
+  
+
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  width: 10px;
 }

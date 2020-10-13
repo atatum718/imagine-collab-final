@@ -36,14 +36,14 @@ class Preview extends Component {
   render() {
     return (
       <div>
-        <img src={this.state.picList[this.state.index]} />
+        <img className="images" src={this.state.picList[this.state.index]} />
         {""}
         <br />
-        <button style={{ fontSize: "18px" }} onClick={this.onClickPrevious}>
+        <button className="button" style={{ fontSize: "18px" }} onClick={this.onClickPrevious}>
           {""}
           Previous{""}
         </button>
-        <button
+        <button className="button"
           style={{ "margin-left": "5px", fontSize: "18px" }}
           onClick={this.onClickNext}
         >

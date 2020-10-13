@@ -12,15 +12,12 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <TopPageDecoration>
-        {" "}
-        styling with yellow border and icons
       </TopPageDecoration>
       <App />
-      <BottomPageDecoration>
-        {" "}
-        styling for bottom, yellow border more icons
+
+      <BottomPageDecoration> 
       </BottomPageDecoration>
-    </BrowserRouter>
+     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

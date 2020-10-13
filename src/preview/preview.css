@@ -17,6 +17,14 @@ img {
   width: 100%;
 }
 
-button {
+.button {
   border: 2px solid fuchsia;
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+}
+
+.images {
+width: 50%;
+height: 70%;
 }
