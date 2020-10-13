@@ -6,14 +6,19 @@ import './App.css'
 import Filter from "./filter/Filter";
 import Preview from "./preview/Preview";
 
+function Header() {
+  return (
+    <>
 
+    </>
+  );
+}
 
 
 
 function App() {
   return (
     <div className="App">
-      <img className="icon" href="https://files.slack.com/files-pri/TCNHBFEG3-F01CYKS6YHE/imagine_logo_neon.png"></img>
       <Header />
       <Switch>
         <Route path="/" exact component={Header} />
