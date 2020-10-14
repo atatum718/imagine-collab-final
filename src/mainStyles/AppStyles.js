@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 import "./appstyles.css";
 import { Link } from "react-router-dom";
 import { FaHome, FaArrowRight } from "react-icons/fa";
-// import logo from "./Assets/logo.png";
 
 const Button = styled.button`
   background: #fad200;
@@ -56,29 +55,7 @@ export function BottomPageDecoration(props) {
           <FaHome size="50px" />
           <FaArrowRight size="50px" />
         </Link>
-
-        /* <Link className="links" to="/">
-        <img
-          className="icons"
-          src="https://files.slack.com/files-pri/TCNHBFEG3-F01BYJ0QHD5/group_1.png"
-          alt="community"
-        ></img>
-      </Link>
-      <Link className="links" to="/preview">
-        <img
-          className="icons"
-          src="https://files.slack.com/files-pri/TCNHBFEG3-F01CDGG40TV/group_2.png"
-        ></img>{" "}
-      </Link>
-      <Link className="links" to="/filter">
-        <img
-          className="icons"
-          src="https://files.slack.com/files-pri/TCNHBFEG3-F01BYJ0PQK1/frame_1.png"
-        ></img>
-      </Link> */
       }
     </div>
   );
 }
-
-// href="javascript:history.go(-1) to go back
