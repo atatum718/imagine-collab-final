@@ -1,10 +1,13 @@
 import React from "react";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import './App.css'
+import {
+  TopPageDecoration,
+  BottomPageDecoration,
+} from "./mainStyles/AppStyles";
+import Filter from "./filter/Filter";
+import Preview from "./preview/Preview";
 
-// import "./App.css";
-import Filter from "./filter/Filter.js";
-import Preview from "./preview/Preview.js";
-import Share from "./Share/Share.js";
 
 function Header() {
   return (

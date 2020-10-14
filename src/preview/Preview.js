@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import tree1 from "./Assets/preview-brightness.png";
 import tree2 from "./Assets/preview-bw.png";
 import tree3 from "./Assets/preview-hue.png";
 import tree4 from "./Assets/preview-saturation.png";
 import "./preview.css";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 class Preview extends Component {
   state = {
