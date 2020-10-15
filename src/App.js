@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import './App.css'
 import {
  TopPageDecoration,
@@ -7,6 +7,7 @@ import {
 } from "./mainStyles/AppStyles";
 import Filter from "./filter/Filter";
 import Preview from "./preview/Preview";
+import Landing from "./landing-page/Landing"
 function Header() {
  return (
   <>
@@ -14,13 +15,16 @@ function Header() {
  );
 }
 
+
+
+
 function App() {
  return (
   <div className="App">
    <TopPageDecoration/>
    <Header />
    <Switch>
-    <Route path="/" exact component={Header} />
+    <Route path="/Landing" exact component={Landing} />
     <Route path="/preview" component={Preview} />
     <Route path="/filter" component={Filter} />
    </Switch>

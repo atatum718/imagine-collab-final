@@ -1,6 +1,6 @@
 import "./filter.css";
 import React, { Component } from "react";
-
+import { Route, Switch, Link } from "react-router-dom"; 
 import Konva from "konva";
 import { Stage, Layer, Image } from "react-konva";
 import useImage from "use-image";
@@ -25,13 +25,14 @@ const ImageViewer = (props) => {
   return (
     <Image
       ref={imageRef}
-      x={100}
-      y={100}
       image={image}
+      width= {200}
+      height= {200}
+      offsetX= {-100}
       filters={[Konva.Filters.HSV]}
       saturation={props.saturation / 100}
       value={props.contrast / 100}
-      shadowBlur={5}
+
     />
   );
   // https://konvajs.org/api/Konva.Filters.html#.HSV

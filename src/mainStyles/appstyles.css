@@ -1,9 +1,7 @@
 .add-button {
-    background-color: white;
+    background-color: black;
    }
-   * {
-    box-sizing: border-box;
-   }
+
    body {
     margin: 0;
     padding: 0;
@@ -16,20 +14,17 @@
    .parent {
     text-align: center;
    }
-   .parent,
    .header-nav,
+
    .parent-links {
-    display: flex;
+   
     height: 60px;
-    margin-bottom: 70px;
-    background-color: yellow;
+    width: 100%;
    }
    .links-1 {
     display: flex;
     justify-content: space-between;
-    width: 200px;
-    height: 60px;
-    background-color: yellow;
+        height: 60px;
    }
    .parent-links {
     margin-top: 60px;
@@ -38,3 +33,15 @@
     align-items: center;
     height: 100%;
    }
+
+
+   .links-3 {
+    display: flex;
+    justify-content: center;
+   }
+
+   .parent-div{
+       width: 100%;
+   }
+
+   

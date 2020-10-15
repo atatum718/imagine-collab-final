@@ -15,9 +15,16 @@ body,
   width:  40px;
 }
 
-
+.image{
+  width: 100%;
+  height: 100%;
+}
 
 .filter-screen-container{
   width: 100%;
   height: 100%;
+}
+
+p {
+  color: white;
 }

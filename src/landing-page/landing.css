@@ -1,0 +1,10 @@
+.icon{
+
+width: 70%;
+}
+
+
+.parent{
+    display:flex;
+justify-content: center;
+}

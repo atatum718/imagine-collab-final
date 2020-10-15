@@ -1,8 +1,9 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import "./appstyles.css";
-import { Link } from "react-router-dom";
-import { FaHome, FaArrowRight } from "react-icons/fa";
+import { Link, Route, Switch} from "react-router-dom";
+import { FaHome, FaArrowRight} from "react-icons/fa";
+
 const Button = styled.button`
  background: #FAD200;
  border-radius: 30px;
@@ -31,7 +32,7 @@ function NavButton(props) {
 }
 export function TopPageDecoration(props) {
  return (
-  <div className="parent">
+  <div className="parent-div">
    <div className="header-nav">{/* <img src={logo} alt=“Logo" /> */}</div>
   </div>
  );
@@ -39,12 +40,16 @@ export function TopPageDecoration(props) {
 export function BottomPageDecoration(props) {
  return (
   <div className="parent-links">
-   {
+       <Link className="links-3" to="./Landing"><FaHome size="50px" />
+</Link>
+
     <Link className="links-1" to="./preview">
-     <FaHome size="50px" />
-     <FaArrowRight size="50px" />
     </Link>
-   }
+
+    <Link className="links-2" to="./Filter"><FaArrowRight size="50px" />
+</Link>
+ 
+
   </div>
  );
 }
