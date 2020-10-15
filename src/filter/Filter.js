@@ -1,5 +1,6 @@
 import "./filter.css";
 import React, { Component } from "react";
+
 import Konva from "konva";
 import { Stage, Layer, Image } from "react-konva";
 import useImage from "use-image";
@@ -101,7 +102,7 @@ class Filter extends Component {
 
 
   render() {
-    return (
+    return ( 
       <div>
         <Stage
           width={window.innerWidth / 2}
