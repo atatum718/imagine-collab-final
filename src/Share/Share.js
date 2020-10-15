@@ -1,21 +1,15 @@
-import React from "react";
+import React, { Component } from 'react';
 import "./share-screen.css";
-import facebook from "./imgs/facebook.png";
-import logo from "./imgs/Imgine_logo_neon_1.png";
-import twitter from "./imgs/twitter.png";
 
-function  share (){
+function Share (){
   
-   
-  
-
     return (
       <div>
         <div>
-        <img src={facebook} alt=""/>
+        <img src="./Img/facebook.png" alt=""/>
          </div>
          <div>
-             <img src={twitter}alt=""/>
+             <img src="./Img/twitter.png" alt=""/>
          </div>
       </div>
     );
