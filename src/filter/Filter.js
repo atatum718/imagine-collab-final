@@ -4,6 +4,7 @@ import { Route, Switch, Link } from "react-router-dom";
 import Konva from "konva";
 import { Stage, Layer, Image } from "react-konva";
 import useImage from "use-image";
+import { faAlignCenter } from "@fortawesome/free-solid-svg-icons";
 
 const ImageViewer = (props) => {
   const [image] = useImage(props.fileUrl, 'Anonimus');
@@ -26,11 +27,14 @@ const ImageViewer = (props) => {
     <Image
       ref={imageRef}
       image={image}
-      width= {200}
-      height= {200}
-      offsetX= {-100}
-      filters={[Konva.Filters.HSV]}
+      width= {500}
+      height= {400}
+
+      x= {530}
+  
+      filters={[Konva.Filters.HSV, Konva.Filters.Brighten, Konva.Filters.saturation]} 
       saturation={props.saturation / 100}
+      brightness={props.brightness / 100}
       value={props.contrast / 100}
 
     />
@@ -53,15 +57,21 @@ class ImageControls extends React.Component {
     this.props.handleSaturationUpdate((event.target.value - 50) * 2);
   };
 
-
+  handleBrightSlider = (event) => {
+    this.props.handleBrightnessUpdate((event.target.value - 50) * 2);
+  };
 
   render() {
     return (
       <div>
         <p>Contrast: {this.props.contrastVal}</p>
         <input type="range" onChange={(event) => this.handleContSlider(event)} />
+
         <p>Saturation: {this.props.saturationVal}</p>
         <input type="range" onChange={(event) => this.handleSatSlider(event)} />
+
+        <p>Brightness: {this.props.brightnessVal} </p>
+        <input type="range" onChange={(event) => this.handleBrightSlider(event)}/>
         <br/>
         <br/>
         <br/>
@@ -80,6 +90,7 @@ class Filter extends Component {
   state = {
     contrastVal: 0,
     saturationVal: 0,
+    brightnessVal: 0,
     fileUrl: new URL("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc111TqOByv02UVqoDNIgnhzyfPG7Fefd5-w&usqp=CAU"),
   };
 
@@ -100,19 +111,25 @@ class Filter extends Component {
       saturationVal: value,
     });
   }
+  handleBrightnessUpdate = (value) => {
+    this.setState({
+      brightnessVal: value,
+    });
+  }
 
 
   render() {
     return ( 
       <div>
         <Stage
-          width={window.innerWidth / 2}
-          height={window.innerHeight / 2}
+          width={window.innerWidth / 1}
+          height={window.innerHeight/1}
         >
           <Layer>
             <ImageViewer 
             contrast={this.state.contrastVal}
             saturation={this.state.saturationVal}
+            brightness={this.state.brightnessVal}
             fileUrl={this.state.fileUrl} />
           </Layer>
         </Stage>
@@ -122,6 +139,9 @@ class Filter extends Component {
 
           saturationVal={this.state.saturationVal}
           handleSaturationUpdate={this.handleSaturationUpdate}
+
+          brightnessVal={this.state.brightnessVal}
+          handleBrightnessUpdate={this.handleBrightnessUpdate}
 
           handleUpload={this.handleUpload}
         />
