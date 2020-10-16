@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-around;
+    padding: 20px;
+}
+.box {
+    height: 75px;
+    width: 95%;
+  border: 1px #0ECAF5 solid;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+
+.arrow{
+  position: relative;
+  left: 130px;
+}
+
