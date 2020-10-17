@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import "./appstyles.css";
 import { Link, Route, Switch} from "react-router-dom";
-import { FaHome, FaArrowRight} from "react-icons/fa";
+import { FaHome, FaArrowRight, FaFilter} from "react-icons/fa";
 
 const Button = styled.button`
  background: #FAD200;
@@ -30,23 +30,18 @@ function NavButton(props) {
   </Button>
  );
 }
-export function TopPageDecoration(props) {
- return (
-  <div className="parent-div">
-   <div className="header-nav">{/* <img src={logo} alt=“Logo" /> */}</div>
-  </div>
- );
-}
+
 export function BottomPageDecoration(props) {
  return (
   <div className="parent-links">
        <Link className="links-3" to="./Landing"><FaHome size="50px" />
 </Link>
 
-    <Link className="links-1" to="./preview">
+    <Link className="links-3" to="./preview">
+    <FaArrowRight size="50px" />
     </Link>
 
-    <Link className="links-2" to="./Filter"><FaArrowRight size="50px" />
+    <Link className="links-2" to="./Filter"><FaFilter size="40px"/>
 </Link>
  
 

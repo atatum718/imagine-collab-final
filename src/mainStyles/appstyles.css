@@ -1,47 +1,50 @@
 .add-button {
-    background-color: black;
-   }
+  background-color: black;
+}
 
-   body {
-    margin: 0;
-    padding: 0;
-   }
-   .logo {
-    width: 20%;
-    height: 30%;
-    margin-top: 40px;
-   }
-   .parent {
-    text-align: center;
-   }
-   .header-nav,
+body {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 20%;
+  height: 30%;
+  margin-top: 40px;
+}
+.parent {
+  text-align: center;
+}
+.header-nav,
+.parent-links {
+  height: 60px;
+  width: 100%;
+}
+.links-1 {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+.parent-links {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+}
 
-   .parent-links {
-   
-    height: 60px;
-    width: 100%;
-   }
-   .links-1 {
-    display: flex;
-    justify-content: space-between;
-        height: 60px;
-   }
-   .parent-links {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-   }
+.title {
+  color: white;
+}
+.links-3 {
+  justify-content: center;
+}
 
+.parent-div {
+  width: 100%;
+}
 
-   .links-3 {
-    display: flex;
-    justify-content: center;
-   }
-
-   .parent-div{
-       width: 100%;
-   }
-
-   
+.img {
+  width: 150px;
+}

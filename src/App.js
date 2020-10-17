@@ -21,7 +21,6 @@ function Header() {
 function App() {
  return (
   <div className="App">
-   <TopPageDecoration/>
    <Header />
    <Switch>
     <Route path="/Landing" exact component={Landing} />
