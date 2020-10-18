@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import "./landing.css"
+import "./landing.css";
+import logo from "../preview/Assets/logo.png";
 
 class Landing extends Component {
     render() {
         return (
         <div className="parent">
             <div className="icon">
-                <img src="https://files.slack.com/files-pri/TCNHBFEG3-F01CYKS6YHE/imagine_logo_neon.png"></img>
+                <img src={logo}></img>
             </div>
             
         </div>
