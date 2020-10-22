@@ -1,8 +1,8 @@
 import React from "react";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch} from "react-router-dom";
 import './App.css'
 import {
- TopPageDecoration,
+//  TopPageDecoration,
  BottomPageDecoration,
 } from "./mainStyles/AppStyles";
 import Filter from "./filter/Filter";

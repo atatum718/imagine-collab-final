@@ -36,7 +36,7 @@ class Preview extends Component {
   render() {
     return (
       <div>
-        <img className="img" src="https://files.slack.com/files-pri/TCNHBFEG3-F01CYKS6YHE/imagine_logo_neon.png"></img>
+        <img className="img" src="../preview/Assets/logo" alt="imagine logo"></img>
 
         <img className="images" src={this.state.picList[this.state.index]} />
         {""}
